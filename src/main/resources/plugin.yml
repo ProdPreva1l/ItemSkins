@@ -1,0 +1,35 @@
+name: ItemSkins
+version: '${version}'
+main: com.mcaim.itemskins.ItemSkins
+api-version: '1.20'
+
+permissions:
+  itemskins.use:
+    default: true
+    description: Allows usage of the main command to access the gui
+  itemskins.apply:
+    default: true
+    description: Allows usage of the apply command to add a skin to an item
+  itemskins.remove:
+    default: true
+    description: Allows usage of the remove command to remove a skin from an item
+
+
+commands:
+  skins:
+    aliases:
+      - skin
+      - itemskins
+      - itemskin
+      - skindex
+    description: Open the main ItemSkins menu
+    usage: /skin
+    permission: itemskins.use
+  applyskin:
+    description: Apply a skin to current held item
+    usage: /applyskin <skin>
+    permission: itemskins.apply
+  removeskin:
+    description: Remove a skin from current held item
+    usage: /removeskin <skin>
+    permission: itemskins.remove
