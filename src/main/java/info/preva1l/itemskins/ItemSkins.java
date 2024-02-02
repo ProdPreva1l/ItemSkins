@@ -22,9 +22,9 @@ public final class ItemSkins extends JavaPlugin {
     public void onEnable() {
         FastInvManager.register(this);
         registerCommands();
-        SkinHelper.registerSkins("com.mcaim.itemskins.skins.hats",
-                "com.mcaim.itemskins.skins.pickaxes",
-                "com.mcaim.itemskins.skins.axes");
+        SkinHelper.registerSkins("info.preva1l.itemskins.skins.hats",
+                "info.preva1l.itemskins.skins.pickaxes",
+                "info.preva1l.itemskins.skins.axes");
         console.info("ItemSkins By Preva1l has started!");
     }
 
